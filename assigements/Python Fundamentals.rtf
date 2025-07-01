@@ -1,0 +1,704 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Wingdings;}{\f2\fnil\fcharset1 Segoe UI Symbol;}{\f3\fnil Calibri;}{\f4\fnil\fcharset1 Segoe UI Symbol;}{\f5\fnil\fcharset1 Cambria Math;}{\f6\fnil\fcharset1 Segoe UI Emoji;}{\f7\fnil\fcharset0 Cambria Math;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.22000}{\*\mmathPr\mmathFont5\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs22\lang9 Module 6) Python Fundamentals\par
+Introduction to Python\par
+Theory:\par
+\f1\'b7\f0  Introduction to Python and its Features (simple, high-level, interpreted language).\par
+\b0 Python is a simple, high-level, and interpreted programming language known for its readability and versatility.\par
+\f2\u-10179?\u-8903?\f0  Key Features of Python:\par
+Simple Syntax: Easy to learn and use (like English).\par
+High-Level Language: Abstracts complex details of the computer\rquote s operation.\par
+Interpreted Language: Code is executed line-by-line by the Python interpreter.\par
+Dynamically Typed: No need to declare variable types.\par
+Extensive Libraries: Built-in and third-party libraries for data science, web development, AI, etc.\par
+Cross-platform: Works on Windows, macOS, Linux, etc.\par
+Object-Oriented & Functional: Supports both programming styles.\par
+ Example of a simple Python program:\par
+print("Hello, Python!")\par
+\par
+\b\par
+\f1\'b7\f0  History and evolution of Python.\par
+\b0 Created by: Guido van Rossum\par
+Year of Development: Late 1980s (officially released in 1991)\par
+Origin: Designed to be a successor of ABC language with better exception handling and extensibility.\par
+\f2\u-10179?\u-8903?\f0  Major Versions:\par
+Python 1.0 \f3\endash  Released in 1991\par
+Python 2.x \endash  Introduced in 2000 with many improvements\par
+Python 3.x \endash  Released in 2008; not backward compatible but more powerful and modern\par
+Current Stable Versions (as of 2024): Python 3.11.x and Python 3.12.x\par
+The name \ldblquote Python\rdblquote  was inspired by the British comedy series Monty Python\rquote s Flying Circus, not the snake!\par
+\par
+\b\f0\par
+\f1\'b7\f0  Advantages of using Python over other programming languages.\par
+Feature\tab\tab\tab               Python\tab\tab\tab C/C++\tab\tab Java\par
+----------------------------------------------------------------------------------------------------\par
+Ease of Use\tab\tab             Very easy\tab\tab Complex\tab Moderate\par
+\par
+Speed of Development\tab\tab Fast\tab\tab\tab Slower\tab\tab Slower\par
+\par
+Syntax\tab\tab\tab\tab Clean\tab\tab\tab  readable\tab Verbose\par
+\tab\par
+Typing\tab\tab\tab\tab Dynamic\tab\tab Static\tab\tab Static\par
+\par
+Memory Management\tab\tab Very large\tab\tab Large\tab\tab Large\par
+Automatic (garbage collection)\tab\par
+Manual\tab Automatic\par
+Community Support\tab\par
+Application Domains\tab Data Science, Web, \tab\tab programming\tab Enterprise software\par
+\tab\tab\tab AI, Automation\tab System \tab\par
+\b0\f4\u9989?\f0  Real-world uses:\par
+Google, Instagram, Netflix use Python\par
+Popular in machine learning, data analysis, scripting, automation, and web apps\par
+\par
+\b\tab\tab\tab\tab\tab\par
+\f1\'b7\f0  Installing Python and setting up the development environment (Anaconda, PyCharm, or VS\par
+Code).\par
+\b0  Option 1: Install Python from python.org\par
+Go to {{\field{\*\fldinst{HYPERLINK https://www.python.org/downloads }}{\fldrslt{https://www.python.org/downloads\ul0\cf0}}}}\f0\fs22\par
+Download the latest version for your OS (Windows/Mac/Linux)\par
+During installation, check the option \ldblquote Add Python to PATH\rdblquote\par
+After install, open Command Prompt or Terminal and type:\par
+bash\par
+python --version\par
+\f2\u-10179?\u-8903?\f0  Option 2: Anaconda (for Data Science & AI)\par
+Go to {{\field{\*\fldinst{HYPERLINK https://www.anaconda.com/products/distribution }}{\fldrslt{https://www.anaconda.com/products/distribution\ul0\cf0}}}}\f0\fs22\par
+Download and install\par
+Launch Anaconda Navigator and open Jupyter Notebook or Spyder\par
+\f2\u-10179?\u-8903?\f0  Option 3: PyCharm (IDE for Python)\par
+Download from {{\field{\*\fldinst{HYPERLINK https://www.jetbrains.com/pycharm/ }}{\fldrslt{https://www.jetbrains.com/pycharm/\ul0\cf0}}}}\f0\fs22\par
+Install and configure interpreter\par
+Create a new project \f5\u8594?\f0  Add .py files\par
+\f2\u-10179?\u-8903?\f0  Option 4: VS Code\par
+Download from {{\field{\*\fldinst{HYPERLINK https://code.visualstudio.com/ }}{\fldrslt{https://code.visualstudio.com/\ul0\cf0}}}}\f0\fs22\par
+Install the Python extension\par
+Install Python separately from python.org or Anaconda\par
+Set Python interpreter path in bottom bar\par
+\b\lang9\par
+\f1\'b7\f0  Writing and executing your first Python program.\par
+\b0 Option A: Using IDLE (comes with Python)\par
+Open IDLE\par
+Click File \f5\u8594?\f0  New File\par
+Write:\par
+python\par
+print("Hello, World!")\par
+Save the file as hello.py\par
+Press F5 to run\par
+\f2\u-10179?\u-8903?\f0  Option B: Using Command Line / Terminal\par
+Save code in hello.py\par
+Run:\par
+bash\par
+python hello.py\par
+\f2\u-10179?\u-8903?\f0  Output:\par
+Hello, World!\lang9\par
+\b 2. Programming Style\par
+Theory:\par
+\f1\'b7\f0  Understanding Python\rquote s PEP 8 guidelines.\par
+\b0 PEP 8 (Python Enhancement Proposal 8) is the official style guide for writing Python code.\par
+It provides conventions for:\par
+Code layout and structure\par
+Naming styles\par
+Indentation\par
+Line length\par
+Imports\par
+Comments and documentation\par
+Purpose:\par
+Improve code readability\par
+Encourage consistency across Python projects\par
+Make collaboration among developers easier\par
+\f2\u-10179?\u-9012?\f0  Key PEP 8 Guidelines:\par
+\f2\u-10179?\u-8903?\f0  a. Indentation\par
+Python uses indentation (whitespace) to define blocks of code\f3\emdash not braces \{\} like C or Java.\par
+\f4\u9989?\f0  Correct:\par
+python\par
+def greet(name):\par
+    print("Hello,", name)\par
+\f4\u10060?\f0  Incorrect (will raise an error):\par
+python\par
+def greet(name):\par
+print("Hello,", name)\par
+Standard indentation: 4 spaces per level.\par
+\f2\u-10179?\u-8903?\f0  b. Line Length\par
+Limit lines to 79 characters\par
+For docstrings/comments: 72 characters\par
+\f2\u-10179?\u-8903?\f0  c. Blank Lines\par
+Use blank lines to separate functions, classes, and sections of code inside functions.\par
+\par
+\b\par
+\f1\'b7\f0  Indentation, comments, and naming conventions in Python.\par
+\b0 Comments make code understandable. Python supports two types:\par
+\f2\u-10179?\u-8903?\f0  a. Single-line comments\par
+Start with #.\par
+python\par
+# This is a single-line comment\par
+print("Hello")\par
+\f2\u-10179?\u-8903?\f0  b. Multi-line comments\par
+Use triple quotes ''' or """ (also used for docstrings).\par
+python\par
+"""\par
+This is a multi-line comment\par
+explaining the function below\par
+"""\par
+def add(a, b):\par
+    return a + b\par
+Element\tab Style\tab\tab\tab\tab\tab\tab\tab Example\par
+Variables\tab lowercase_with_underscores\tab\tab\tab\tab total_sum\par
+Functions\tab lowercase_with_underscores\tab\tab\tab\tab calculate_area()\par
+Constants\tab ALL_CAPS\tab\tab\tab\tab\tab\tab PI = 3.14\par
+Classes\tab\tab CapitalizedWords\tab\tab\tab\tab\tab StudentData\par
+Modules/Files\tab lowercase_with_underscores\tab\tab\tab\tab student_module.py\par
+\par
+Avoid using single-character names (except in loops), and don\rquote t use reserved keywords (like list, str, int, etc.) as variable names.\par
+\par
+\b\par
+\f1\'b7\f0  Writing readable and maintainable code.\par
+\b0 Readable code is easy to understand, and maintainable code is easy to fix or extend.\par
+\f4\u10024?\f0  Best Practices:\par
+Use meaningful variable and function names (total_marks, calculate_average())\par
+Break code into functions for reusability\par
+Keep functions short and focused\par
+Add comments where logic is complex\par
+Use whitespace for clarity\par
+Follow consistent formatting and indentation\par
+Avoid deeply nested loops or conditions\par
+\f4\u9989?\f0  Example of Well-Styled Code (PEP 8 Compliant)\par
+python\par
+# Function to calculate average marks\par
+def calculate_average(marks):\par
+    total = sum(marks)\par
+    average = total / len(marks)\par
+    return average\par
+student_marks = [85, 90, 78, 92]\par
+avg = calculate_average(student_marks)\par
+print("Average Marks:", avg)\par
+\par
+\b 3. Core Python Concepts\par
+Theory:\par
+\f1\'b7\f0  Understanding data types: integers, floats,strings, lists, tuples, dictionaries,sets.\par
+\b0 Python is a dynamically typed language, meaning you don\rquote t need to declare the type of variable. Data types define the kind of value a variable holds.\par
+\f2\u-10179?\u-8903?\f0  a. Integer (int)\par
+Whole numbers (positive or negative)\par
+No decimal point\par
+python\par
+x = 10\par
+print(type(x))  # Output: <class 'int'>\par
+\f2\u-10179?\u-8903?\f0  b. Float (float)\par
+Numbers with decimal points\par
+python\par
+price = 99.99\par
+print(type(price))  # Output: <class 'float'>\par
+\f2\u-10179?\u-8903?\f0  c. String (str)\par
+Text enclosed in quotes (' or ")\par
+python\par
+name = "Nenshi"\par
+print(type(name))  # Output: <class 'str'>\par
+\f2\u-10179?\u-8903?\f0  d. List (list)\par
+Ordered, mutable (changeable), allows duplicate values\par
+Defined using square brackets []\par
+python\par
+fruits = ["apple", "banana", "cherry"]\par
+print(fruits[0])  # Output: apple\par
+\f2\u-10179?\u-8903?\f0  e. Tuple (tuple)\par
+Ordered, immutable (unchangeable), allows duplicates\par
+Defined using parentheses ()\par
+python\par
+coordinates = (10, 20)\par
+print(coordinates[1])  # Output: 20\par
+\f2\u-10179?\u-8903?\f0  f. Dictionary (dict)\par
+Unordered collection of key-value pairs\par
+Mutable, no duplicate keys\par
+python\par
+student = \{"name": "Nenshi", "roll": 101\}\par
+print(student["name"])  # Output: Nenshi\par
+\f2\u-10179?\u-8903?\f0  g. Set (set)\par
+Unordered, unindexed, mutable, no duplicate items\par
+python\par
+colors = \{"red", "blue", "green", "red"\}\par
+print(colors)  # Output: \{'blue', 'red', 'green'\}\par
+\par
+\b\par
+\f1\'b7\f0  Python variables and memory allocation.\par
+\b0  a. Variables\par
+Variables are used to store data values\par
+Python automatically decides the type\par
+No need to declare type like int, float\par
+python\par
+a = 5         # int\par
+b = "Hello"   # str\par
+\f2\u-10179?\u-8903?\f0  b. Memory Allocation\par
+When a variable is assigned a value, Python creates an object in memory\par
+The variable name references that object\par
+Use id() to get the memory address (object identity)\par
+python\par
+x = 10\par
+print(id(x))  # Shows memory address of the integer object 10\par
+Python uses automatic garbage collection to free unused memory.\par
+\par
+\b\par
+\f1\'b7\f0  Python operators: arithmetic, comparison, logical, bitwise.\par
+\b0  a. Arithmetic Operators\par
+Operator\tab Meaning\tab\tab\tab Example\par
++\tab\tab Addition\tab\tab\tab 3 + 2 = 5\par
+-\tab\tab Subtraction\tab\tab\tab 5 - 2 = 3\par
+*\tab\tab Multiplication\tab\tab\tab 4 * 2 = 8\par
+/\tab\tab Division\tab\tab\tab 10 / 2 = 5.0\par
+//\tab\tab Floor Division\tab\tab\tab 10 // 3 = 3\par
+%\tab\tab Modulus (remainder)\tab\tab 10 % 3 = 1\par
+**\tab\tab Exponentiation\tab\tab\tab 2 ** 3 = 8\par
+\par
+\f2\u-10179?\u-8903?\f0  b. Comparison (Relational) Operators\par
+Used to compare values and return True/False.\par
+\par
+Operator\tab Meaning\tab\tab\tab Example\par
+==\tab\tab Equal to\tab\tab\tab x == y\par
+!=\tab\tab Not equal to\tab\tab\tab x != y\par
+>\tab\tab Greater than\tab\tab\tab x > y\par
+<\tab\tab Less than\tab\tab\tab x < y\par
+>=\tab\tab Greater or equal\tab\tab x >= y\par
+<=\tab\tab Less or equal\tab\tab\tab x <= y\par
+\par
+\f2\u-10179?\u-8903?\f0  c. Logical Operators\par
+Used to combine multiple conditions.\par
+\par
+Operator\tab\tab\tab Description\tab\tab\tab\tab Example\par
+and\tab\tab\tab\tab True if both are True\tab\tab\tab x > 5 and x < 10\par
+or\tab\tab\tab\tab True if at least one is True\tab\tab x < 5 or x > 20\par
+not\tab\tab\tab\tab Reverses condition\tab\tab\tab not(x > 5)\par
+\par
+\f2\u-10179?\u-8903?\f0  d. Bitwise Operators\par
+Used to perform bit-level operations (works on binary).\par
+\par
+Operator\tab Name\tab\tab\tab\tab\tab Example (binary of 5 & 3)\par
+&\tab\tab AND \tab\tab\tab\tab\tab 5 & 3 = 1 (0101 & 0011)\par
+`\tab\tab `\tab\tab\tab\tab\tab\tab OR\par
+^\tab\tab XOR\tab\tab\tab\tab\tab\tab 5 ^ 3 = 6\par
+~\tab\tab NOT\tab\tab\tab\tab\tab ~5 = -6 (inverts bits)\par
+<<\tab\tab Left Shift\tab\tab\tab\tab\tab 5 << 1 = 10\par
+>>\tab\tab Right Shift\tab\tab\tab\tab\tab 5 >> 1 = 2\par
+\par
+\b\par
+4. Conditional Statements\par
+Theory:\par
+\f1\'b7\f0  Introduction to conditionalstatements: if, else, elif.\par
+\b0 Conditional statements are used to make decisions in a program. Based on certain conditions, different blocks of code are executed.\par
+\f2\u-10179?\u-8903?\f0  1. The if Statement\par
+The if statement checks a condition.\par
+If the condition is True, the indented block under if runs.\par
+python\par
+x = 10\par
+if x > 5:\par
+    print("x is greater than 5")\par
+\f4\u9989?\f0  Output:\par
+csharp\par
+x is greater than 5\par
+\f2\u-10179?\u-8903?\f0  2. The else Statement\par
+The else block runs if the if condition is False.\par
+python\par
+x = 3\par
+if x > 5:\par
+    print("x is greater than 5")\par
+else:\par
+    print("x is not greater than 5")\par
+\f4\u9989?\f0  Output:\par
+csharp\par
+x is not greater than 5\par
+\f2\u-10179?\u-8903?\f0  3. The elif Statement (Else-If)\par
+Used to check multiple conditions.\par
+As soon as one condition is True, the corresponding block is executed, and the rest are skipped.\par
+python\par
+x = 10\par
+if x < 5:\par
+    print("x is less than 5")\par
+elif x == 10:\par
+    print("x is equal to 10")\par
+else:\par
+    print("x is greater than 5 but not equal to 10")\par
+\f4\u9989?\f0  Output:\par
+vbnet\par
+x is equal to 10\par
+\par
+\b\par
+\f1\'b7\f0  Nested if-else conditions.\par
+\b0 You can place one if or else statement inside another.\par
+Useful for multiple levels of decisions.\par
+\f2\u-10179?\u-8903?\f0  Example: Grading System\par
+python\par
+marks = 85\par
+if marks >= 60:\par
+    if marks >= 90:\par
+        print("Grade: A+")\par
+    elif marks >= 80:\par
+        print("Grade: A")\par
+    else:\par
+        print("Grade: B")\par
+else:\par
+    print("Fail")\par
+\b\par
+\par
+\f1\'b7\f0 5. Looping (For, While)\par
+Theory:\par
+\f1\'b7\f0  Introduction to for and while loops.\par
+\b0  for Loop in Python\par
+The for loop is used to iterate over a sequence (like a list, tuple, string, or range).\par
+\f4\u9989?\f0  Syntax:\par
+python\par
+for variable in sequence:\par
+    # code block\par
+\f4\u9989?\f0  Example:\par
+python\par
+for i in range(5):\par
+    print(i)\par
+\f6\u-10179?\u-8222?\f0  Output:\par
+0\par
+1\par
+2\par
+3\par
+4\par
+the while loop runs as long as the condition is True.\par
+\f4\u9989?\f0  Syntax:\par
+while condition:\par
+    # code block\par
+\f4\u9989?\f0  Example:\par
+i = 1\par
+while i <= 5:\par
+    print(i)\par
+    i += 1\par
+\par
+\par
+\b\f1\'b7\f0  How loops work in Python.\par
+\b0 Both for and while loops execute a block of code repeatedly:\par
+\par
+Loop Type\tab Best Used When\par
+for\tab\tab You know how many times you want to iterate (fixed range or items)\par
+while\tab\tab You want to repeat until a condition becomes false\par
+\f2\u-10179?\u-8959?\f0  Loop Control Keywords\par
+break: Exit the loop prematurely\par
+continue: Skip current iteration and go to the next\par
+pass: Does nothing (placeholder)\par
+\b\par
+\f1\'b7\f0  Using loops with collections (lists, tuples, etc.).\par
+\b0 Python collections like lists, tuples, sets, and dictionaries can be looped through using for loops.\par
+\f2\u-10179?\u-8903?\f0  a. List Example\par
+fruits = ["apple", "banana", "cherry"]\par
+for fruit in fruits:\par
+    print(fruit)\par
+\f6\u-10179?\u-8222?\f0  Output:\par
+nginx\par
+Copy\par
+Edit\par
+apple\par
+banana\par
+cherry\par
+\f2\u-10179?\u-8903?\f0  b. Tuple Example\par
+numbers = (1, 2, 3)\par
+for num in numbers:\par
+    print(num)\par
+\f2\u-10179?\u-8903?\f0  c. Set Example\par
+colors = \{"red", "green", "blue"\}\par
+for color in colors:\par
+    print(color)\par
+(Note: sets are unordered)\par
+\f2\u-10179?\u-8903?\f0  d. Dictionary Example\par
+student = \{"name": "Nenshi", "age": 20\}\par
+for key in student:\par
+    print(key, ":", student[key])\par
+\f2\u-10179?\u-8903?\f0  e. Using enumerate() with a list\par
+subjects = ["Math", "Science", "History"]\par
+for index, subject in enumerate(subjects):\par
+    print(index, subject)\par
+\f6\u-10179?\u-8222?\f0  Output:\par
+0 Math\par
+1 Science\par
+2 History\par
+\b\par
+6. Generators and Iterators\par
+Theory:\par
+\f1\'b7\f0  Understanding how generators work in Python.\par
+\b0 A generator is a special type of function in Python that returns an iterator and generates values one at a time, on the fly, using the yield keyword.\par
+\f2\u-10179?\u-8903?\f0  Key Features:\par
+They don\rquote t store the entire sequence in memory.\par
+Values are generated lazily (when requested).\par
+Saves memory and is efficient for large datasets.\par
+\f4\u9989?\f0  Example of a Generator Function:\par
+python\par
+def number_generator():\par
+    for i in range(1, 4):\par
+        yield i\par
+gen = number_generator()\par
+for num in gen:\par
+    print(num)\par
+\f6\u-10179?\u-8222?\f0  Output:\par
+1\par
+2\par
+3\par
+\b\par
+\f1\'b7\f0  Difference between yield and return.\par
+\b0 Aspect\tab\tab\tab yield\tab\tab\tab\tab\tab return\par
+Function type\tab\tab Used in generator functions\tab\tab Used in normal functions\par
+What it does\tab\tab Pauses function & saves state\tab\tab Ends the function completely\par
+Return value\tab\tab Returns a generator object\tab\tab Returns a single value\par
+Multiple values?\tab Yes, using a loop (for)\tab\tab\tab No, only once\par
+Memory use\tab\tab Efficient (does not store all data)\tab Can consume more memory\par
+\par
+\f4\u9989?\f0  Example:\par
+# Using return\par
+def test_return():\par
+    return 1\par
+    return 2  # This line will never execute\par
+print(test_return())  # Output: 1\par
+# Using yield\par
+def test_yield():\par
+    yield 1\par
+    yield 2\par
+for val in test_yield():\par
+    print(val)\par
+\f6\u-10179?\u-8222?\f0  Output:\par
+1\par
+2\par
+\b\par
+\f1\'b7\f0  Understanding iterators and creating custom iterators.\par
+\b0 An iterator is an object that allows you to iterate over collections like lists, tuples, or custom sequences.\par
+\f2\u-10179?\u-8903?\f0  An object is an iterator if it:\par
+Implements __iter__() \f5\u8594?\f0  returns itself\par
+Implements __next__() \f5\u8594?\f0  returns the next value\par
+\f4\u9989?\f0  Example: Built-in Iterator\par
+my_list = [10, 20, 30]\par
+my_iter = iter(my_list)\par
+print(next(my_iter))  # Output: 10\par
+print(next(my_iter))  # Output: 20\par
+print(next(my_iter))  # Output: 30\par
+\par
+class\f7  \f0 Counter\f7 :\f0\par
+\f7     \f0 def\f7  __\f0 init\f7 __(\f0 self\f7 , \f0 low\f7 , \f0 high\f7 ):\f0\par
+\f7         \f0 self\f7 .\f0 current\f7  = \f0 low\par
+\f7         \f0 self\f7 .\f0 high\f7  = \f0 high\par
+\f7     \f0 def\f7  __\f0 iter\f7 __(\f0 self\f7 ):\f0\par
+\f7         \f0 return\f7  \f0 self\par
+\f7     \f0 def\f7  __\f0 next\f7 __(\f0 self\f7 ):\f0\par
+\f7         \f0 if\f7  \f0 self\f7 .\f0 current\f7  > \f0 self\f7 .\f0 high\f7 :\f0\par
+\f7             \f0 raise\f7  \f0 StopIteration\par
+\f7         \f0 else\f7 :\f0\par
+\f7             \f0 num\f7  = \f0 self\f7 .\f0 current\par
+\f7             \f0 self\f7 .\f0 current\f7  += \f0 1\par
+\f7             \f0 return\f7  \f0 num\par
+\f7 # \f0 Using\f7  \f0 the\f7  \f0 custom\f7  \f0 iterator\par
+for\f7  \f0 number\f7  \f0 in\f7  \f0 Counter\f7 (\f0 1\f7 , \f0 5\f7 ):\f0\par
+\f7     \f0 print\f7 (\f0 number\f7 )\par
+\b\f0\lang9\par
+7. Functions and Methods\par
+Theory:\par
+\f1\'b7\f0  Defining and calling functions in Python.\par
+\b0 A function is a block of reusable code that performs a specific task. Functions help organize code, make it readable, and reduce repetition.\par
+\f2\u-10179?\u-8903?\f0  Defining a Function:\par
+def greet():\par
+    print("Hello, world!")\par
+def: keyword to define a function\par
+greet(): function name\par
+(): parentheses (can contain parameters)\par
+Indented block: function body\par
+\f2\u-10179?\u-8903?\f0  Calling a Function:\par
+greet()  # Output: Hello, world!\par
+\b\par
+\f1\'b7\f0  Function arguments (positional, keyword, default).\par
+\b0 Python supports several types of arguments in functions:\par
+\f2\u-10179?\u-8903?\f0  a. Positional Arguments\par
+Values are assigned to parameters based on their position.\par
+def add(a, b):\par
+    return a + b\par
+print(add(3, 5))  # Output: 8\par
+\f2\u-10179?\u-8903?\f0  b. Keyword Arguments\par
+You specify parameter names when calling the function, so the order doesn't matter.\par
+print(add(b=5, a=3))  # Output: 8\par
+\f2\u-10179?\u-8903?\f0  c. Default Arguments\par
+Parameters can have default values. If no argument is passed, the default is used.\par
+def greet(name="Guest"):\par
+    print("Hello", name)\par
+greet()         # Output: Hello Guest\par
+greet("Nenshi") # Output: Hello Nenshi\par
+\f2\u-10179?\u-8903?\f0  d. Arbitrary Arguments (*args and **kwargs)\par
+*args allows multiple positional arguments\par
+**kwargs allows multiple keyword arguments\par
+def total(*numbers):\par
+    return sum(numbers)\par
+print(total(1, 2, 3))  # Output: 6\par
+\b\par
+\f1\'b7\f0  Scope of variables in Python.\par
+\b0 scope refers to where a variable is accessible in the code.\par
+\f2\u-10179?\u-8903?\f0  a. Local Scope\par
+Defined inside a function and used only there.\par
+def example():\par
+    x = 10  # local variable\par
+    print(x)\par
+\f2\u-10179?\u-8903?\f0  b. Global Scope\par
+Defined outside of any function and accessible everywhere.\par
+x = 5  # global variable\par
+def show():\par
+    print(x)\par
+\f2\u-10179?\u-8903?\f0  c. global Keyword\par
+Allows you to modify a global variable inside a function.\par
+x = 10\par
+def change():\par
+    global x\par
+    x = 20\par
+change()\par
+print(x)  # Output: 20\par
+\b\par
+\f1\'b7\f0  Built-in methods forstrings, lists, etc.\par
+\b0  a. String Methods\par
+Method\tab\tab\tab Description\tab\tab\tab\tab Example\par
+upper()\tab\tab\tab\tab Converts to uppercase\tab\tab "hello".upper() \f5\u8594? 'HELLO'\par
+lower()\tab\f7\lang1033\tab\tab\f5 Converts to lowercase\tab\f7\lang1033\tab\f5 "HELLO".lower() \u8594? 'hello'\par
+strip()\tab\f7\lang1033\tab\tab\tab\f5 Removes whitespace\tab\f7\lang1033\tab\f5 " hello ".strip() \u8594? 'hello'\par
+replace()\tab\f7\lang1033\tab\tab\f5 Replaces part of the string\tab "car".replace("c", "b") \u8594? 'bar'\par
+split()\tab\f7\lang1033\tab\tab\tab\f5 Splits string into list\tab\f7\lang1033\tab\f5 "a,b,c".split(",") \u8594? ['a','b','c']\par
+len()\tab\f7\lang1033\tab\tab\tab\f5 Returns length\f7\lang1033\tab\tab\tab\f5\tab len("apple") \u8594? 5\par
+\par
+\f2\u-10179?\u-8903?\f0  b. List Methods\par
+Method\tab\tab\tab Description\tab\tab\tab\tab\tab Example\par
+append()\tab\tab\tab Adds element at end\tab\tab\tab mylist.append(10)\par
+insert()\tab\tab\tab\tab Inserts at given index\tab\tab\tab mylist.insert(1, 5)\par
+remove()\tab\tab\tab Removes first occurrence of value\tab mylist.remove(3)\par
+pop()\tab\tab\tab\tab Removes and returns last item\tab\tab mylist.pop()\par
+sort()\tab\tab\tab\tab Sorts the list in ascending order\tab\tab mylist.sort()\par
+reverse()\tab\tab\tab Reverses the list\tab\tab\tab mylist.reverse()\par
+\lang9\par
+\b 8. Control Statements (Break, Continue, Pass)\par
+Theory:\par
+\f1\'b7\f0  Understanding the role of break, continue, and pass in Python loops.\par
+\b0 1. break Statement\par
+The break statement is used to exit the loop immediately, even if the condition hasn\rquote t become False.\par
+Commonly used when a specific condition is met and you no longer need to continue the loop.\par
+\f4\u9989?\f0  Example:\par
+for fruit in ['apple', 'banana', 'mango']:\par
+    if fruit == 'banana':\par
+        break\par
+    print(fruit)\par
+\f6\u-10179?\u-8222?\f0  Output:\par
+apple\par
+\f2\u-10179?\u-8903?\f0  2. continue Statement\par
+The continue statement is used to skip the current iteration and move to the next iteration.\par
+It does not stop the loop entirely, just skips one turn when a condition is met.\par
+\f4\u9989?\f0  Example:\par
+for fruit in ['apple', 'banana', 'mango']:\par
+    if fruit == 'banana':\par
+        continue\par
+    print(fruit)\par
+\f6\u-10179?\u-8222?\f0  Output:\par
+nginx\par
+apple\par
+mango\par
+\f2\u-10179?\u-8903?\f0  3. pass Statement\par
+The pass statement does nothing. It\rquote s a placeholder for future code.\par
+Often used in if, for, while, or function bodies where the code is yet to be written.\par
+\f4\u9989?\f0  Example:\par
+for fruit in ['apple', 'banana', 'mango']:\par
+    if fruit == 'banana':\par
+        pass  # do nothing\par
+    print(fruit)\par
+\f6\u-10179?\u-8222?\f0  Output:\par
+nginx\par
+apple\par
+banana\par
+mango\b\par
+9. String Manipulation\par
+Theory:\par
+\f1\'b7\f0  Understanding how to access and manipulate strings.\par
+\b0 In Python, a string is a sequence of characters. You can access and manipulate strings using indexing, slicing, and built-in methods.\par
+\f2\u-10179?\u-8903?\f0  Accessing Characters in a String\par
+You can access characters using indexes, where indexing starts from 0.\par
+text = "Python"\par
+print(text[0])   # Output: P (1st character)\par
+print(text[-1])  # Output: n (last character)\par
+\par
+\b\par
+\f1\'b7\f0  Basic operations: concatenation, repetition,string methods(upper(), lower(), etc.).\par
+\b0  a. Concatenation\par
+Used to combine two or more strings using the + operator.\par
+first = "Hello"\par
+second = "World"\par
+result = first + " " + second\par
+print(result)  # Output: Hello World\par
+\f2\u-10179?\u-8903?\f0  b. Repetition\par
+You can repeat a string using the * operator.\par
+word = "Hi"\par
+print(word * 3)  # Output: HiHiHi\par
+\f2\u-10179?\u-8903?\f0  c. \b string methods\b0\par
+Method\tab\tab Description\tab\tab Example\tab\tab\tab Output\par
+------------------------------------------------------------------------------------------------------------------------\par
+upper()\tab\tab Converts all characters            \tab "hello".upper()\tab\tab\tab 'HELLO'\par
+\tab\tab  to uppercase\par
+lower()\tab\tab Converts all characters \tab\tab "Hello".lower()\tab\tab\tab 'hello'\par
+\tab\tab to lowercase\tab\par
+strip()\tab Removes leading/trailing whitespace\tab " hello ".strip()\tab\tab\tab 'hello'\par
+replace()\tab Replaces a substring\tab\tab "apple".replace("a", "o")\tab 'opple'\par
+find()\tab\tab Returns index of first \tab\tab "hello".find("e")                           \tab 1\par
+\tab\tab occurrence\tab\tab\par
+len()\tab\tab Returns length of string\tab\tab\tab len("hello")\tab\tab 5\par
+startswith()\tab Checks if string starts with substring\tab "Python".startswith("Py")\tab True\par
+endswith()\tab Checks if string ends with substring\tab "Python".endswith("on")\tab True\par
+\par
+\b\par
+\f1\'b7\f0  String slicing.\par
+\b0 Slicing allows you to extract a substring from a string using this syntax:\b\par
+\b0 string[start:end:step]\par
+start: starting index (inclusive)\par
+end: ending index (exclusive)\par
+step: optional, skips characters\par
+\f4\u9989? Examples:\par
+text = "Programming"\par
+print(text[0:5])     # Output: Progr  (from index 0 to 4)\par
+print(text[3:])      # Output: gramming\par
+print(text[:4])      # Output: Prog\par
+print(text[::2])     # Output: Pormig (every 2nd char)\par
+print(text[-1])      # Output: g (last character)\b\f0\par
+\par
+10. Advanced Python (map(), reduce(), filter(), Closures and Decorators)\par
+Theory:\par
+\f1\'b7\f0  How functional programming works in Python.\par
+\b0 Python supports functional programming using concepts like:\par
+First-class functions (functions as variables/arguments)\par
+Higher-order functions (map(), filter(), reduce())\par
+Closures\par
+Decorators\par
+Functional programming focuses on what to do, not how to do it, and promotes the use of pure functions (no side effects) and immutability.\par
+\par
+\b\par
+\f1\'b7\f0  Using map(), reduce(), and filter() functions for processing data.\par
+\b0  1. map() Function\par
+Applies a function to each item in a list or iterable.\par
+Returns a new iterable with transformed values.\par
+map(function, iterable)\par
+\f2\u-10179?\u-8903? 2. reduce() Function (from functools module)\par
+Repeatedly applies a function to reduce a sequence to a single value.\par
+reduce(function, iterable)\par
+\u-10179?\u-8903? 3. filter() Function\par
+Filters elements from a list based on a condition.\par
+filter(function, iterable)\par
+\b\f0\par
+\f1\'b7\f0  Introduction to closures and decorators.\par
+\b0 A closure is a function defined inside another function that remembers the variables in the enclosing scope even after the outer function is done.\par
+def outer(x):\par
+    def inner(y):\par
+        return x + y\par
+    return inner\par
+add5 = outer(5)\par
+print(add5(10))  # Output: 15\par
+\f2\u-10179?\u-8903? 5. Decorators in Python\par
+A decorator is a function that modifies the behavior of another function without changing its code. Used with @decorator_name.\par
+def decorator(func):\par
+    def wrapper():\par
+        print("Before function call")\par
+        func()\par
+        print("After function call")\par
+    return wrapper\par
+@decorator\par
+def greet():\par
+    print("Hello!")\par
+greet()\par
+\f6\u-10179?\u-8222? Output:\par
+Before function call\par
+Hello!\par
+After function call\b\f0\par
+\b0\par
+}
+ 
